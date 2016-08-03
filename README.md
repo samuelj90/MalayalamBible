@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-# basel-app
-Base app for https://github.com/ClubeDosGeeksCoding/basel.git
+# Malayalam Bible
+A Cross Platform Malayalm Bilble Application
 
 ## Using
 Install BASEL
@@ -22,6 +21,3 @@ Run
 npm start
 ```
 =======
-# MalayalamBible
-A Cross Platform Malayalm Bilble Application
->>>>>>> b7e57dd91655fe1eda987e34ccdc36a4256a184e
