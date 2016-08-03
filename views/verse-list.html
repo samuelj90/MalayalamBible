@@ -1,0 +1,54 @@
+<!-- <ul ng-init="getVerseList()">
+<li ng-repeat="verse in verseList">{{verse.text}}</li>
+</ul> -->
+<div>
+<!-- <ul>
+<li ng-repeat="verse in verseList">{{verse.position}} >> {{verse.text}}</li>
+</ul>
+<div class="card">
+	<div class="card-image">
+		<img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
+		<span class="card-title">Material Cards</span>
+	</div>
+	<div class="card-content">
+		<p>Cards for display in portfolio style material design by Google.</p>
+	</div>
+	<div class="card-action">
+		<a href="#" target="new_blank">Link</a>
+		<a href="#" target="new_blank">Link</a>
+		<a href="#" target="new_blank">Link</a>
+		<a href="#" target="new_blank">Link</a>
+		<a href="#" target="new_blank">Link</a>
+	</div>
+</div>
+ -->
+	<div>
+		<div class="card">
+			<div class="card-content">
+				<div class="row">
+				<div class="col-md-2">
+					<button type="button" ng-click="decrementChapter()" class="btn btn-default btn-circle pull-left" ng-hide="selectedChapter<=1"><i class="fa fa-chevron-circle-left"></i></button>
+				</div>
+				<div class="col-md-8">
+					<p class="text-center">{{selectedBook.title}} പുസ്തകം, അദ്ധ്യായം {{selectedChapter}} </p>
+				</div>
+				<div class="col-md-2">
+					<button type="button" ng-click="incrementChapter()" class="btn btn-default btn-circle pull-right" ng-hide="selectedChapter>=selectedBook.chapters"><i class="fa fa-chevron-circle-right"></i></button>
+				</div>
+				</div>
+			</div>
+			<div class="card-action" ng-repeat="verse in (searchResult=(verseList | filter : searchQuery)) track by $index">
+				<button type="button" class="btn btn-default btn-circle">{{verse.position}}</button>
+				<span ng-bind-html="verse.text | highlight:searchQuery"></span>
+				<!-- {{verse.text}} -->
+			</div>
+		</div>
+	</div>
+	<!-- <div class="loading" ng-show="!isVerseLoaded">
+		<div class="loading-bar"></div>
+		<div class="loading-bar"></div>
+		<div class="loading-bar"></div>
+		<div class="loading-bar"></div>
+	</div> -->
+	 <div ng-if="searchResult.length" > <hr/> Showing {{searchResult.length}} out of {{verseList.length}} Verses. </div>
+</div>

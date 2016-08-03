@@ -1,0 +1,14 @@
+UPDATE books
+SET
+      chapters = (SELECT max(verses.chapter_num)
+                            FROM verses
+                            WHERE verses.book_id = books.id )
+    , verses = (SELECT count(*)
+                            FROM verses
+                            WHERE verses.book_id = books.id )
+WHERE
+    EXISTS (
+        SELECT *
+        FROM verses
+        WHERE verses.book_id = books.id 
+    )

@@ -21,7 +21,10 @@
     *   })
     *
     */
-
+    $routeProviderReference.when('/',{
+       controller: 'mainController',
+       templateUrl: 'views/verse-list.html'
+    })
 
     $routeProviderReference.otherwise({ redirectTo: '/' });
     $route.reload();
