@@ -13,7 +13,7 @@ basel-init MalayalamBible
 
 Install dependencies
 ```shell
-cd  && npm install
+cd MalayalamBible && npm install
 ```
 
 Run
