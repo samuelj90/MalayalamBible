@@ -8,12 +8,12 @@ npm install -g basel
 ```
 Init the app
 ```shel
-basel-init myApp
+basel-init MalayalamBible
 ```
 
 Install dependencies
 ```shell
-cd myApp && npm install
+cd  && npm install
 ```
 
 Run
