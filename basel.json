@@ -1,7 +1,6 @@
 {
-	"name":"myapp",
-	"branch":"master",
-	"database":"database",
-	"title":"My App",
-	"type":"simple"
+    "name": "MalayalamBible",
+    "database": "database",
+    "title": "Malayalam Bible by Masssolution",
+    "type": "simple"
 }

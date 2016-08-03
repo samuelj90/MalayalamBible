@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # basel-app
 Base app for https://github.com/ClubeDosGeeksCoding/basel.git
 
@@ -20,3 +21,7 @@ Run
 ```shell
 npm start
 ```
+=======
+# MalayalamBible
+A Cross Platform Malayalm Bilble Application
+>>>>>>> b7e57dd91655fe1eda987e34ccdc36a4256a184e
