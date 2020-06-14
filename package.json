@@ -23,7 +23,7 @@
     },
     "devDependencies": {
         "electron-prebuilt": "latest",
-        "electron-packager": "^6.0.0",
+        "electron-packager": "^14.2.1",
         "basel-cli": "*",
         "jquery": "^3.5.1",
         "angular": "^1.5.1",
